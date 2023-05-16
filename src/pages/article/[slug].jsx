@@ -295,17 +295,17 @@ export default IndexVeiw;
 //   };
 // }
 
-export async function getServerSideProps(context) {
-  const { slug } = context.query ?? "1";
-  const promotionHomeDTO = await getPromotionHome();
-  const articleDTO = await getArticle(slug);
-  const contactDTO = await getContact();
+// export async function getServerSideProps(context) {
+//   const { slug } = context.query ?? "1";
+//   const promotionHomeDTO = await getPromotionHome();
+//   const articleDTO = await getArticle(slug);
+//   const contactDTO = await getContact();
 
-  return {
-    props: {
-      promotionHome: promotionHomeDTO ?? {},
-      article: articleDTO ?? {},
-      contact: contactDTO ?? {},
-    },
-  };
-}
+//   return {
+//     props: {
+//       promotionHome: promotionHomeDTO ?? {},
+//       article: articleDTO ?? {},
+//       contact: contactDTO ?? {},
+//     },
+//   };
+// }
